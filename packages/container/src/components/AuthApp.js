@@ -12,6 +12,7 @@ const AuthApp = ({ onSignIn }) => {
       onNavigate: ({ pathname: nextPathname }) => {
         const { pathname } = history.location;
         if (pathname !== nextPathname) {
+          console.log("NAVIGATE TO: ", nextPathname);
           history.push(nextPathname);
         }
       },
